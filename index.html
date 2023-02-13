@@ -8,30 +8,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Group</th>
-          <th>Members</th>
-          <th>Project Name</th>
-          <th>Project URL</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Won11</td>
-          <td>Noi</td>
-          <td>Teams Networking</td>
-          <td>url</td>
-        </tr>
-        <tr>
-          <td>Won10</td>
-          <td>Noi</td>
-          <td>Teams Networking</td>
-          <td>url</td>
-        </tr>
-      </tbody>
-    </table>
+    <form action="secretariat" method="GET">
+      <table border="1" id="teams">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Members</th>
+            <th>Project Name</th>
+            <th>Project URL</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="promotion"
+                id="promotion"
+                placeholder="Enter Group"
+                required
+              />
+            </td>
+            <td>
+              <input
+                required
+                type="text"
+                name="members"
+                id="members"
+                placeholder="Enter Members"
+              />
+            </td>
+            <td>
+              <input
+                required
+                placeholder="Project Name"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </td>
+            <td>
+              <input
+                required
+                placeholder="Project URL"
+                type="text"
+                name="url"
+                id="url"
+              />
+            </td>
+            <td>
+              <button type="submit">💾</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
     <script src="index.js"></script>
   </body>
 </html>
